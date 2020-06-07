@@ -14,18 +14,9 @@ body
     
 }
 
-.news-img{
-    max-width: 100%;
-    height: auto;
-}
-.page-header {
-    position: relative;
-    top: 20%;
-}
 
 
 .loader {
-    margin: auto;
     padding: 10px;
     border: 16px solid #f3f3f3;
     border-radius: 50%;
@@ -45,3 +36,17 @@ body
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+@media screen and (min-width: 360px) {
+    .loader {
+        position: relative;
+        left: 30vw;
+    }
+}
+
+/* @media screen and (min-width : 800px) {
+    loader {
+        position: relative;
+        left: 10vw;
+    }
+} */

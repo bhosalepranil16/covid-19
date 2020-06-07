@@ -24,8 +24,8 @@ fetch('/global_data')
 .then(data => {
     const html = Mustache.render(dataTemplate,{
         active : data.active_cases,
-        recovered : data.recovered_cases,
-        deaths : data.death_cases,
+        recovered : data.death_cases,
+        deaths : data.recovered_cases,
         total : data.confirmed_cases
     })
     $globalContainer.innerHTML = '';

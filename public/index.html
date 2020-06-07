@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>India Data</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Go Corona</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a href="index.html" class="navbar-brand font-weight-bold h1">Go Corona</a>
+            <a href="index.html" class="navbar-brand"><h1 class="font-weight-bold">Go Corona</h1></a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,33 +37,33 @@
         </div>
     </nav>
 
-    <header id="page-header">
+    <header id="page-header" style="margin-top: 100px;">
             <div class="row">
-                <div class="col-md-6 m-auto text-center font-weight-bold">
-                    <h1>Covid-19 Global</h1>
+                <div class="col-md-6 m-auto text-center">
+                    <h1 class="font-weight-bold">Covid-19 Global</h1>
                 </div>
         </div>
     </header>
 
-    <div id="global-container" class="container bg-light" >
+    <div id="global-container" class="container bg-light p-1" >
     
     </div>
 
     <header id="page-header">
         <div class="container my-2 ">
             <div class="row">
-                <div class="col-md-6 m-auto text-center font-weight-bold">
-                    <h1>Covid-19 India</h1>
+                <div class="col-md-6 m-auto text-center">
+                    <h1 class="font-weight-bold">Covid-19 India</h1>
                 </div>
             </div>
         </div>
     </header>
 
-    <div id="india-container" class="container bg-light" >
+    <div id="india-container" class="container bg-light p-1" >
     
     </div>
         
-    <div id="time-container" class="container mt-3">
+    <div id="time-container" class="container mt-3 bg-muted text-gray p-2">
         
     </div>
     
@@ -73,16 +72,16 @@
     </script>
 
     <script id="time-template" type="text/html">
-        <h4>Last Updated On {{timeAndDate}}</h4>
+        <h4 class="font-weight-bold">Last Updated On {{timeAndDate}}</h4>
     </script>
 
 
     <script type="text/html" id="all-data-template">
         <div class="row">
             <div class="col-sm-3">
-                <div class="card text-center m-3 border border-warning text-warning">
+                <div class="card rounded text-center m-3 border border-info text-info">
                     <div class="card-body">
-                        <h3 class="card-text">Active</h3>
+                        <h3 class="card-text font-weight-bold">Active</h3>
                         <h3 class="card-text">{{active}}</h3>
                     </div>
                 </div>
@@ -90,7 +89,7 @@
             <div class="col-sm-3">
                 <div class="card text-center m-3 border border-success text-success">
                     <div class="card-body">
-                        <h3 class="card-text">Recovered</h3>
+                        <h3 class="card-text font-weight-bold">Recovered</h3>
                         <h3 class="card-text">{{recovered}}</h3>
                     </div>
                 </div>
@@ -98,7 +97,7 @@
             <div class="col-sm-3">
                 <div class="card text-center m-3 border border-danger text-danger">
                     <div class="card-body">
-                        <h3 class="card-text">Deaths</h3>
+                        <h3 class="card-text font-weight-bold">Deaths</h3>
                         <h3 class="card-text">{{deaths}}</h3>
                     </div>
                 </div>
@@ -106,7 +105,7 @@
             <div class="col-sm-3">
                 <div class="card text-center m-3 border border-primary text-primary">
                     <div class="card-body">
-                        <h3 class="card-text">Total</h3>
+                        <h3 class="card-text font-weight-bold">Total</h3>
                         <h3 class="card-text">{{total}}</h3>
                     </div>
                 </div>

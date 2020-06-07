@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>India Data</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Helpline</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a href="index.html" class="navbar-brand font-weight-bold h1">Go Corona</a>
+            <a href="index.html" class="navbar-brand font-weight-bold h1"><h1 class="font-weight-bold">Go Corona</h1></a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,7 +37,7 @@
         </div>
     </nav>
 
-    <header id="page-header">
+    <header id="page-header" style="margin-top: 100px;">
         <div class="container my-2 ">
             <div class="row">
                 <div class="col-md-6 m-auto text-center font-weight-bold">
@@ -53,10 +52,16 @@
             
         </div>
     </div>
-    <script type="text/html" id="nos-template">
-        <div class="col-sm-12 bg-gray p-3 border border-primary m-1">
-            <div class="h3 font-weight-bold">{{state}}</div>
-            <div class="h3 font-weight-bold">{{no}}</div>
+    <script type="text/html" id="nos-template-white">
+        <div class="col-sm-12 p-3 border border-gray m-1">
+            <div class="h3 font-weight-bold text-dark">{{state}}</div>
+            <div class="h3 font-weight-bold text-gray">{{no}}</div>
+        </div>
+    </script>
+    <script type="text/html" id="nos-template-black">
+        <div class="col-sm-12 bg-light text-dark p-3 border border-gray m-1">
+            <div class="h3 font-weight-bold ">{{state}}</div>
+            <div class="h3 font-weight-bold ">{{no}}</div>
         </div>
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
